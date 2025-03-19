@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Interactive Demo</h1>
+        <div class="dark-mode-container">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <!-- Background Color Changer -->
+        <section>
+            <h2>Change Background Color</h2>
+            <button id="colorBtn">Change Color</button>
+            <input type="color" id="colorPicker">
+        </section>
+
+        <!-- Audio/Video Controls -->
+        <section>
+            <h2>Control Video</h2>
+            <video id="video" width="320" height="240">
+                <source src="highway-bridge.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div>
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="muteBtn">Mute</button>
+                <label>
+                    <input type="checkbox" id="autoPlay"> Auto Play
+                </label>
+            </div>
+        </section>
+
+        <!-- List Manipulation -->
+        <section>
+            <h2>Manage List</h2>
+            <ul id="itemList">
+                <!-- <li>Item 1</li>
+                <li>Item 2</li> -->
+            </ul>
+            <input type="text" id="newItem" placeholder="Enter new item">
+            <button id="addItem">Add Item</button>
+        </section>
+
+        <!-- Reset Button -->
+        <section>
+            <h2>Reset Everything</h2>
+            <button id="resetBtn">Reset</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

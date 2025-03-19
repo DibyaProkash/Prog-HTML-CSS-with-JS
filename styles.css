@@ -1,0 +1,143 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+/* Buttons */
+button {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1a5bcc;
+}
+
+/* List Styling */
+#itemList {
+    list-style-type: none;
+    padding: 0;
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+#itemList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 18px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#itemList li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Input Fields */
+input[type="text"], input[type="color"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    width: 80%;
+    max-width: 300px;
+}
+
+/* Video Section */
+video {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode section {
+    background: #222;
+}
+
+.dark-mode input, 
+.dark-mode button {
+    background: #444;
+    color: white;
+}
+
+.dark-mode #itemList li {
+    background: #333;
+    color: white;
+}
+
+.dark-mode #itemList li:hover {
+    background: #444;
+}
